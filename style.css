@@ -1,0 +1,155 @@
+html {
+  font-family: helvetica;
+  color: white;
+  font-size: 20px;
+}
+
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.p400, .p600, .p800, .p1000, .p1200, .p1400, .p1600 {
+  display: none;
+  height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  margin: 0;
+  overflow: hidden;
+
+}
+
+.sakura-leaves {
+  height: 30px;
+  width: 30px;
+  background-image: url('assets/sakuraleaves.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1000;
+  /* left: 300px; */
+  /* top: 300px; */
+  transform-style: preserve-3d;
+  /* animation-name: fall; */
+/* animation-timing-function: ease-in; */
+/* animation-duration: 1.7s; */
+/* animation-iteration-count: infinite; */
+}
+
+
+  @keyframes fall {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(100px) translateX(150px); }
+      100% { transform: translateY(700px) translateX(70px); }
+    }
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: black;
+    background-image: url(assets/400.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 8rem;
+  }
+  .p400 {
+    display: block;
+  }
+  .p600, .p800, .p1000, .p1200, .p1400, .p1600 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: red;
+    background-image: url(assets/600.png);
+    background-repeat:repeat-y;
+    background-size: cover;
+    font-size: 8rem;
+  }
+  .p600 {
+    display: block;
+  }
+  .p400, .p800, .p1000, .p1200, .p1400, .p1600 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+    background-image: url(assets/800.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 8rem;
+
+  }
+  .p800 {
+    display: block;
+  }
+  .p400, .p600, .p1000, .p1200, .p1400, .p1600 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: black;
+    background-image: url(assets/1000.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 8rem;
+  }
+  .p1000 {
+    display: block;
+  }
+  .p400, .p600, .p800, .p1200, .p1400, .p1600 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: orange;
+    background-image: url(assets/1200.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-size: 20px;
+  }
+  .p1200 {
+    display: block;
+  }
+  .p400, .p600, .p800, .p1000, .p1400, .p1600 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: green;
+    background-image: url(assets/1400.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: orange;
+    font-size: 8rem;
+  }
+  .p1400 {
+    display: block;
+  }
+  .p400, .p600, .p800, .p1000, .p1200, .p1600 {
+    display: none;
+  }
+}
